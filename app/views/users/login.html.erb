@@ -1,0 +1,23 @@
+<!--<h1>ログイン</h1>-->
+
+<!--<%= form_tag("/login") do %>-->
+<!--  id<input type="text" name="uid">-->
+<!--  password<input type="password" name="password">-->
+<!--  <input type="submit" value="ログイン">-->
+<!--<% end %>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ログイン画面</title>
+</head>
+<body>
+  <h1>ログイン画面</h1>
+
+  <form action="/users/login" method="post">
+    <input type="text" name="uid" placeholder="ID">
+    <input type="password" name="password" placeholder="パスワード">
+    <input type="submit" value="ログイン">
+  </form>
+</body>
+</html>
